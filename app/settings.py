@@ -44,6 +44,7 @@ try:
 except ImportError:
     print "Missing local_settings.py file or file not in PATH"
 
+import os
 import yaml
 
 # Database settings
