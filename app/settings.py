@@ -44,6 +44,8 @@ try:
 except ImportError:
     print "Missing local_settings.py file or file not in PATH"
 
+import yaml
+
 # Database settings
 yaml_db = yaml.load(file(os.path.join(PROJECT_DIR, 'database.yml'), 'r'))[DB_ENV]
 DATABASES = {
