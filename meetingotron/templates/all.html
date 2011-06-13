@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}All meetings{% endblock %}
+{% block content %}
+<div class="meetings">
+    <h1>All meetings</h1>
+    <ul>
+        {% for meeting in meetings %}
+                <li>
+                    {% if not meeting.expired %}<em>{% endif %}
+                        <a href="{% url meeting meeting.id %}">{{meeting.title}}</a> (<a href="{{meeting.etherpad_url}}">view notes</a>)
+                    {% if not meeting.expired %} (ongoing)</em>{% endif %}    
+                    
+                </li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}

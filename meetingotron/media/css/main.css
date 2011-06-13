@@ -1,0 +1,49 @@
+html {margin:0; padding:0;background: #333}
+html.timeup {background:#a21f1f;}
+body {margin:0;padding:0; font-family:helvetica, arial, sans-serif; color:#fff;
+  font-family: 'Cabin Sketch', arial, serif;padding:0 3% 3% 3%;}
+
+a {color:#fff; font-size:90%;}
+
+#divHeader {padding:1em 2em;}
+#divContent {padding:1%;}
+
+#menu {text-align:right; padding-bottom:0.3em;}
+
+#intro {width:50%; float:left;}
+#intro h1 {font-size:800%; font-weight:normal; text-align:left; line-height:0.9em; padding-bottom:0.3em; color:#fcffd2;}
+#intro p {margin:0; font-size:300%; padding:0.2em 0; color:#d1faff;}
+
+#new_meeting {margin-left:55%; font-size:200%; position:relative;}
+#new_meeting li {padding-bottom:0.6em;}
+#new_meeting label {display:block; color:#d6ffd1;}
+#new_meeting textarea {width:100%; height:4em;}
+
+#custom_types {border-top:solid 2px #fff; clear:both; margin-top:2em; padding-top:1em;}
+#custom_types h2 {font-size:300%; padding-bottom:0.3em; color:#d1faff;}
+#custom_types form {font-size:200%;}
+
+#meeting_notes {width:60%;}
+#about_meeting {width:40%;}
+
+#about_meeting #title {border-top:solid 5px #fff; margin:1em; padding-top:1em;font-size:120%;}
+#about_meeting #title h3 {font-size:200%;}
+#about_meeting #expired {font-size:200%; padding:1em;}
+
+#counter {text-align:center;font-size:300%;}
+#counter #counter_minutes {font-size:500%; display:block;line-height:1em;}
+
+#meeting_notes {overflow:hidden;height:100%;}
+#meeting_notes iframe {width:100%;height:100%;}
+#meeting_notes div {position:relative;top:-62px; left:-2px;}
+#meeting_notes input {font-family:monospace; width:60%; background:#ddd;}
+#meeting_notes, #about_meeting {float:left; position:relative;}
+#meeting_notes p {padding-left:2px;}
+
+.meetings h1 {color:#d1faff; font-size:400%; padding-bottom:0.2em;}
+.meetings ul {font-size:140%;}
+.meetings ul em, .meetings ul em a {color:#ffd1d1;}
+
+input[type="submit"] {border:solid #fff 4px; background:none; color:#fff; padding:0.1em 0.3em;}
+input[type="submit"]:active {background:#d1faff; color:#333;}
+input[type="submit"]:hover {background:#d1faff; color:#333;}

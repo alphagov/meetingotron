@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}New meeting{% endblock %}
+{% block content %}
+    <div id="intro">
+        <h1>Meting -o- tron</h1>
+        <p>Meeting timer and note taking</p>
+    </div>
+    <form id="new_meeting" method="post" action=".">
+        <ul class="form">
+            <li>
+          	    {{ form.title.label_tag }}
+          	    {{ form.title }}
+            </li>
+            <li>
+          	    {{ form.purpose.label_tag }}
+          	    {{ form.purpose }}
+            </li>
+            <li>
+          	    {{ form.length_in_minutes.label_tag }}
+          	    {{ form.length_in_minutes }}
+            </li>
+        </ul>
+        <input type="submit" value="Start meeting" />
+    </form>
+    <div id="custom_types">
+        <h2>Routine meetings</h2>
+        <form action="." method="post">
+            <input type="hidden" name="routine" value="1" />
+            <input type="submit" name="routine-standup" value="Stand-up (15 minutes)"/>
+            <input type="submit" name="routine-showandtell" value="Sprint show &amp; tell (1 hour)"/>            
+        </form>
+    </div>
+{% endblock %}
