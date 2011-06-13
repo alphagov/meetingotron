@@ -29,7 +29,6 @@ def new(request):
                 meeting.title ="Standup - "+ datetime.date.today().strftime("%B %d, %Y")
                 meeting.purpose ="Daily team catchup"
                 meeting.length_in_minutes = 15
-                meeting.length_in_minutes = 1
                 valid = True
             #show and tell
             if request.POST.get('routine-showandtell', False):
