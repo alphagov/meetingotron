@@ -43,3 +43,21 @@ try:
     from local_settings import *
 except ImportError:
     print "Missing local_settings.py file or file not in PATH"
+
+# Database settings
+yaml_db = yaml.load(file(os.path.join(PROJECT_DIR, 'database.yml'), 'r'))[DB_ENV]
+DATABASES = {
+  'default': {
+    'ENGINE': 'django.db.backends.' + yaml_db['adapter'],
+    'HOST': yaml_db['host'] if yaml_db.has_key('host') else '',
+    'NAME': yaml_db['database'],
+    'USER': yaml_db['username'],
+    'PASSWORD': yaml_db['password'] if yaml_db.has_key('password') else '',
+    'PORT': yaml_db['port'] if yaml_db.has_key('port') else '',
+    'OPTIONS': {},
+    'TEST_CHARSET': None,
+    'TEST_COLLATION': None,
+    'TEST_NAME': None,
+  } 
+}
+
