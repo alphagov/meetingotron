@@ -48,6 +48,7 @@ import os
 import yaml
 
 # Database settings
+PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
 yaml_db = yaml.load(file(os.path.join(PROJECT_DIR, 'database.yml'), 'r'))[DB_ENV]
 DATABASES = {
   'default': {
