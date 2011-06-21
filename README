@@ -1,4 +1,4 @@
-(A work in progress
+(A work in progress)
 
 A small web app for keeping meetings short and forcing you to take notes, inspired by: http://www.businessweek.com/smallbiz/content/sep2006/sb20060927_259688.htm
 
@@ -11,6 +11,11 @@ How it works:
 - Displays a split screen half countdown / half etherpad for taking notes
 - When the timer hits zero the screen flashes (in the future it might also force you to stop typing by threatening to delete your notes)
 - Notes and meeting details are saved for future use
+
+Screenshots:
+
+http://www.flickr.com/photos/memespring/5855961875/in/set-72157600078269009/
+http://www.flickr.com/photos/memespring/5856515566/in/set-72157600078269009/
 
 
 Todo:
