@@ -1,0 +1,19 @@
+(A work in progress
+
+A small web app for keeping meetings short and forcing you to take notes, inspired by: http://www.businessweek.com/smallbiz/content/sep2006/sb20060927_259688.htm
+
+How it works:
+
+- Asks you for a title, purpose and length of upfront
+- Starts a countdown timer
+- Displays a split screen half countdown / half etherpad for taking notes
+- When the timer hits zero the screen flashes (in the future it might also force you to stop typing by threatening to delete your notes)
+- Notes and meeting details are saved for future use
+
+
+Todo:
+
+- management task for deleting meetings with no notes from the database
+- ability to search meetings
+- import meeting text into database from etherpad for search indexing
+- add an visual/audio trigger for when certain % of meeting time remaining
