@@ -2,6 +2,8 @@
 
 A small web app for keeping meetings short and forcing you to take notes, inspired by: http://www.businessweek.com/smallbiz/content/sep2006/sb20060927_259688.htm
 
+and from watching how the Open Knowledge Foundation use Etherpad for collaboratively minuting meetings
+
 How it works:
 
 - Asks you for a title, purpose and length of upfront
